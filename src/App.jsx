@@ -31,7 +31,7 @@ export default function App() {
       setTodos(todosArr);
     });
     return () => unsubscribe();
-  });
+  } , []);
 
   const addtodo = async () => {
     if (!newtodo.trim()) {
